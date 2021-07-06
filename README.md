@@ -1,1 +1,1 @@
-Covering all of Python in 100 days. 
+Covering all of Python in 100 days.      
