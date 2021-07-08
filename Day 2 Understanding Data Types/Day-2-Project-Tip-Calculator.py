@@ -20,4 +20,4 @@ bill_plus_tip = float(bill_times_tip) + float(total_bill)
 final_bill = round(bill_plus_tip, 2)
 
 
-print(f"Each person should pay: ${final_bill}")
+print(f"Each person should pay: ${final_bill}") 
