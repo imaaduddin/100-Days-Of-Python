@@ -29,8 +29,14 @@ choice1 = input("Would you like to go left or right?\n")
 if choice1 == "right":
   print("You fell into a hole. Game Over.")
 elif choice1 == "left":
-  choice2 = input("swim or wait"):
+  choice2 = input("swim or wait\n")
 if choice2 == "swim":
-  print("Attacked by a dragon. Game Over."):
+  print("Attacked by a dragon. Game Over.")
 elif choice2 == "wait":
-  choice3 = input("Which door?")
+  choice3 = input("Which door?\n")
+if choice3 == "red":
+  print("Game Over.")
+elif choice3 == "yellow":
+  print("You Win!")
+else:
+  print("Game Over.")
