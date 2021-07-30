@@ -29,4 +29,8 @@ names = names_string.split(", ")
 #Write your code below this line 👇
 print(names)
 
-random_name = random
+random_name = random.randint(0, len(names) - 1)
+
+chosen_one = names[random_name]
+
+print(f"{chosen_one} is going to buy the meal today!")
