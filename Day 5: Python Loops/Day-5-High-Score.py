@@ -38,3 +38,6 @@ print(student_scores)
 # 🚨 Don't change the code above 👆
 
 #Write your code below this row 👇
+
+max_score = 0
+for score in student_scores:
