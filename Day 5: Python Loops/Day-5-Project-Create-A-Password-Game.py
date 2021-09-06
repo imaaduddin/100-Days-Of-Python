@@ -18,18 +18,36 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 
 # Code for easy:
-# for i in range(nr_numbers):
-#   print(random.choice(numbers))
-# for j in range(nr_symbols):
-#   print(random.choice(symbols))
-# for k in range(nr_letters):
-#   print(random.choice(letters))
+# password = ""
 
-for i in range(nr_letters):
-  print(random.choice(letters))
-  for j in range(nr_symbols):
-    print(random.choice(symbols))
-    for k in range(nr_numbers):
-      print(random.choice(numbers))
+# for i in range(1, nr_letters + 1):
+#   password += random.choice(letters)
 
+# for j in range(1, nr_symbols + 1):
+#   password += random.choice(symbols)
+
+# for k in range(1, nr_numbers + 1):
+#   password += random.choice(numbers)
+
+# print(password)
+
+
+
+
+
+# Code for Hard:
+password = ""
+
+for i in range(1, nr_letters + 1):
+  password += random.choice(letters)
+
+for j in range(1, nr_symbols + 1):
+  password += random.choice(symbols)
+
+for k in range(1, nr_numbers + 1):
+  password += random.choice(numbers)
+
+random_password = random.shuffle(password)
+
+print(random_password)
 
