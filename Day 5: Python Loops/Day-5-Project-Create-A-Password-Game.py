@@ -36,18 +36,25 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 
 # Code for Hard:
-password = ""
+password_list = []
 
 for i in range(1, nr_letters + 1):
-  password += random.choice(letters)
+  password_list.append(random.choice(letters))
 
 for j in range(1, nr_symbols + 1):
-  password += random.choice(symbols)
+  password_list += random.choice(symbols)
 
 for k in range(1, nr_numbers + 1):
-  password += random.choice(numbers)
+  password_list += random.choice(numbers)
 
-random_password = random.shuffle(password)
+print(password_list)
+random.shuffle(password_list)
+print(password_list)
 
-print(random_password)
+password = ""
+for l in password_list:
+  password += l
+
+print(f"Your password is: {password}")
+
 
